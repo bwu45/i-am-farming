@@ -16,7 +16,7 @@ This is a top-down farming game where you plant and grow crops, manage your farm
 
 The foundation of this project was built by following [JacquelynneHei's Unity farming RPG tutorial series](LINK-TO-PLAYLIST). Features I designed and built myself beyond the tutorial are listed below.
 
-**Art & audio:** [Sprouts Land asset pack] by [Cup Nooble] ([https://cupnooble.itch.io/sprout-lands-asset-pack])
+**Art & audio:** [Sprouts Land asset pack] by [Cup Nooble] ([https://cupnooble.itch.io/])
 
 ## What I Built Beyond the Tutorial
 
