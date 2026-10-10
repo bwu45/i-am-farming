@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 [System.Serializable]
 public class Inventory 
@@ -34,6 +35,7 @@ public class Inventory
     }
 
     public List<Slot> slots = new List<Slot>();
+    public event Action OnChanged;
 
     public Inventory(int numSlots)
     {
@@ -51,6 +53,7 @@ public class Inventory
             if (slot.type == item.type && slot.CanAddItem())
             {
                 slot.AddItem(item);
+                OnChanged?.Invoke();
                 return;
             }
         }
@@ -59,6 +62,7 @@ public class Inventory
             if (slot.type == CollectableType.NONE)
             {
                 slot.AddItem(item);
+                OnChanged?.Invoke();
                 return;
             }
         }
